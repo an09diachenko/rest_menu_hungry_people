@@ -1,0 +1,55 @@
+.pancakes {
+    padding-bottom: 100px;
+    background: {
+        image: url(images/specialtiesBg.png);
+        repeat: no-repeat;
+        size: cover;
+    }
+    
+    color: #fff;
+    .title {
+        font: {
+            family: 'Permanent Marker', cursive;
+            size: 36px;
+        } 
+    }
+    
+    .title__items {
+        text-align: center;
+        font: {
+            family: 'Open Sans', sans-serif;
+            weight: bold;
+            size: 12px;
+        }
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        height: 100px;
+        line-height: 100px;
+    }
+    
+    &__item {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 18px;
+    
+    span {
+        display: block;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    }
+    
+    img {
+        width: 475px;
+        height: 475px;
+    }
+    
+    &__item::after {
+        @extend %pseudo_square;
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        margin-top: -113px;
+        margin-left: -350px;
+    }
+}

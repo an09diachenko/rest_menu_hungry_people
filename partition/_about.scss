@@ -1,0 +1,36 @@
+.about {
+    padding: 100px 0px;
+
+    .title {
+        font-family: 'Permanent Marker', cursive;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 18px;
+
+        span {
+            display: block;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+    }
+
+    img {
+        width: 475px;
+        height: 475px;
+    }
+
+    &__items::after {
+        @extend %pseudo_square;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -125px;
+        margin-left: 40px;
+
+
+    }
+}

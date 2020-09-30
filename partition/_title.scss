@@ -1,0 +1,20 @@
+.title {
+    &::after {
+        display: block;
+        content: "";
+        margin: 10px auto;
+        width: 60px;
+        height: 5px;
+        background-color: #e8c300;
+        border-radius: 50px;
+}
+}
+
+%pseudo_square {
+        display: block;
+        content: "";
+        width: 250px;
+        height: 250px;
+        border: 20px solid #e8c300;
+        border-radius: 5px;
+}

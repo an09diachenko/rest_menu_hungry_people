@@ -1,0 +1,118 @@
+.private {
+    background: {
+        image: url(images/specialtiesBg.png);
+        repeat: no-repeat;
+        size: cover;
+    }
+    color: #fff;
+    .title {
+        font: {
+            family: 'Permanent Marker', cursive;
+            size: 36px;
+        }
+    }
+    .title__items {
+        text-align: center;
+
+        font: {
+            family: 'Open Sans', sans-serif;
+            weight: bold;
+            size: 12px;
+        }
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        height: 100px;
+        line-height: 100px;
+    }
+    
+    &__item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 75%;
+        width: 250px;
+        height: 250px;
+        border: 20px solid #e8c300;
+        border-radius: 5px;
+    }
+    &__items::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 75%;
+        width: 250px;
+        height: 250px;
+        border: 20px solid #e8c300;
+        border-radius: 5px;
+    }
+    &__title {
+        position: absolute;
+        height: 50px;
+        line-height: 50px;
+        width: 475px;
+        top: 45%;
+        left: 50%;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        font: {
+            family: 'Permanent Marker', cursive;
+            size: 24px;
+        }
+    }
+    
+    &__titles {
+        position: absolute;
+        height: 50px;
+        line-height: 50px;
+        width: 475px;
+        top: 45%;
+        right: 50%;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        font: {
+            family: 'Permanent Marker', cursive;
+            size: 24px;
+        }
+    }
+    &__item, &__items {
+//        width: 500px;
+//        height: 500px;
+        background-color: #000;
+    }
+    &__pic {
+        overflow: hidden;
+    }
+    
+    img {
+        display: block;
+        height: 500px;
+    }
+    &__phone {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        color: rgba(255, 255, 255, 0.5);
+        padding-bottom: 20px;
+
+        span {
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 768px) {
+        &__item::after, &__items::before, &__title, &__titles {
+            display: none;
+        }
+       
+        &__items {
+            margin-top: 20px;
+        }
+        
+    }
+    
+    
+}
+

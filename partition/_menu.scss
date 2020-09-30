@@ -1,0 +1,50 @@
+.menu {
+     padding: 100px 0;
+    
+    &__items {
+        .title {
+            font: {
+                family: 'Permanent Marker', cursive;
+                size: 36px;
+            }
+            text-transform: uppercase;
+        }
+        text-align: center;
+        span {
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 18px;
+            padding-top: 20px;
+        }
+    }
+    
+    &__title {
+        display: inline;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    
+    &__item {
+        text-align: center;
+    }
+    &__item p {
+        font: {
+                family: 'Permanent Marker', cursive;
+                size: 16px;
+            }
+            text-transform: uppercase;
+        margin: 20px 0;
+        
+        span {
+           font-size: 10px; 
+            display: block;
+            color: #a5a5a5;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &__title {
+            padding: 10px;
+        }
+    }
+}
